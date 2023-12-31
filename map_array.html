@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <h1>My favorite characters from The Way of Kings!</h1>
+        <ul id = "character_list">
+            
+        </ul>
+
+        <script>
+                //Create array
+                const characters = ["Shallan","Dalinar","Kaladin","Syl"];
+                //This allows javascript to interact with the unordered list
+                let list = document.getElementById("character_list");
+
+                for(var counter = 0; counter < characters.length; counter++){
+                    //This creates the list item inside the array
+                    let li = document.createElement('li');
+                    //This somehow connects the newly created list item to the item in teh array
+                    li.innerText = characters[counter];
+                    //This appends the list item to the array in html
+                    list.appendChild(li);
+                }
+                
+
+
+        </script>
+      
+
+    </body>
+</html>
